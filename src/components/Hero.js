@@ -21,11 +21,11 @@ const Hero = () => {
       <div className={styles.heroContent}>
         <p className={styles.flashSale}>FLASH SALE! - 30% OFF ON ALL RECIPE</p>
         <h1 className={styles.mainHeadline}>
-  Savor the Flavors <br /> of Every Season
-</h1>
-<h3 className={styles.subheadline}>
-  Explore the Ultimate Recipe Collection
-</h3>
+          Savor the Flavors <br /> of Every Season
+        </h1>
+        <h3 className={styles.subheadline}>
+          Explore the Ultimate Recipe Collection
+        </h3>
         <motion.button
           className={styles.ctaButton}
           onClick={scrollToCards}
