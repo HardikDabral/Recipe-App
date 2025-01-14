@@ -1,0 +1,132 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+  }
+  
+  .modalContent {
+    background: #fff;
+    border-radius: 15px; /* Softer corners */
+    padding: 30px;
+    width: 95%;
+    max-width: 500px; /* Slightly longer and more centered */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    position: relative;
+    text-align: center; /* Center the content */
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #4caf50; /* Light gray color for close button */
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .closeButton:hover {
+    color: #45a049; /* Darker color on hover */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #4caf50;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased gap for better spacing */
+  }
+  
+  .input {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect on focus */
+    outline: none;
+  }
+  
+  .submitButton {
+    background-color: #4caf50; /* Professional blue color */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #45a049; /* Darker blue on hover */
+  }
+  
+  p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  p a:hover {
+    color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .modalContent {
+      width: 90%; /* Reduce width for smaller screens */
+      padding: 20px; /* Adjust padding for better spacing on small screens */
+      max-width: 350px; /* Limit the maximum width */
+    }
+  
+    h2 {
+      font-size: 1.5rem; /* Slightly smaller headline for phones */
+    }
+  
+    .input {
+      font-size: 0.9rem; /* Smaller font size for inputs */
+      padding: 10px; /* Adjust padding for better spacing */
+    }
+  
+    .submitButton {
+      font-size: 0.9rem; /* Smaller button font size */
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .closeButton {
+      font-size: 1.5rem; /* Adjust size for smaller devices */
+      top: 10px; /* Adjust position for better alignment */
+      right: 10px;
+    }
+  
+    p {
+      font-size: 0.8rem; /* Adjust paragraph font size */
+    }
+  }
+  

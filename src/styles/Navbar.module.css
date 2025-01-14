@@ -1,0 +1,115 @@
+.navbar {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    width: 100%; /* Ensure it takes full width */
+    justify-content: space-between; /* Space between logo and profile button */
+    align-items: center;
+    padding: 10px 20px; /* Padding around the navbar */
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Make the navbar sticky */
+    top: 0; /* Stick to the top */
+    left: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+    margin: 0 auto; /* Center the navbar */
+    box-sizing: border-box; /* Include padding in width calculations */
+    position: fixed;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #4caf50;
+    font-size: 32px;
+    font-weight: bold;
+}
+.logo a:hover {
+    color: #45a049; /* Slightly lighter color on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+.searchForm {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allow the search form to grow */
+    margin-left: 20px; /* Space between logo and search bar */
+    max-width: 700px; /* Set maximum width for the search form */
+    width: 100%; /* Ensure it takes full width */
+}
+
+.searchInput {
+    padding: 12px 15px; /* Increased padding for better usability */
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    outline: none;
+    flex-grow: 1; /* Make the input take available space */
+    min-width: 200px; /* Minimum width for smaller screens */
+    border-radius: 25px 0 0 25px; /* Curvy corners for the input */
+    height: 48px; /* Set a fixed height for the input */
+}
+
+.searchButton {
+    padding: 0 15px; /* Adjust padding for the button */
+    width: 70px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 0 25px 25px 0; /* Curvy corners for the button */
+    cursor: pointer;
+    outline: none;
+    display: flex; /* Center the icon */
+    align-items: center; /* Center the icon vertically */
+    justify-content: center; /* Center the icon horizontally */
+    height: 48px; /* Set the same height as the input */
+}
+
+.searchButton:hover {
+    background-color: #45a049;
+}
+
+.profileButton {
+    padding: 15px; /* Padding for the profile button */
+    font-size: 1rem;
+    border: none;
+    background-color: #4caf50; /* Same color as search button */
+    color: white;
+    border-radius: 25px; /* Curvy corners for the profile button */
+    cursor: pointer;
+    margin-left: 20px; /* Space between search and profile button */
+    display: flex; /* Center the icon */
+    align-items: center; /* Center the icon vertically */
+    justify-content: center; /* Center the icon horizontally */
+}
+
+.profileButton:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 10px; /* Reduce padding on smaller screens */
+    }
+
+    .logo a {
+        font-size: 1.1em; /* Reduce logo size on mobile */
+        white-space: nowrap;
+    }
+
+    .searchInput {
+        max-width: 100px; /* Reduce minimum width on smaller screens */
+        height: 40px;
+    }
+
+    .searchButton {
+        height: 40px;
+        width: 40px;
+    }
+
+    .searchForm {
+        margin-left: 10px; /* Reduce margin on smaller screens */
+    }
+
+    .profileButton {
+        margin-left: 10px; /* Reduce margin on smaller screens */
+        padding: 12px;
+    }
+}

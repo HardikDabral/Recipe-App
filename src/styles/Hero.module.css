@@ -1,0 +1,89 @@
+.heroContainer {
+  position: relative;
+  height: 600px; /* Adjust height as needed */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/pexels-goumbik-349609.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  z-index: 1; /* Place it behind the content */
+}
+
+.heroContent {
+  position: relative; /* Ensure content is above the background */
+  z-index: 10;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.flashSale {
+  background: linear-gradient(to right, #4caf50, #388e3c);
+  color: white;
+  padding: 10px;
+  width: 400px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.mainHeadline {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.subheadline {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.ctaButton {
+  background-color: white;
+  color: #4caf50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #4caf50;
+  color: white;
+}
+  
+@media (max-width: 768px) {
+  .heroContent {
+    position: relative; /* Ensure content is above the background */
+    z-index: 10;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+  }
+  .mainHeadline {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  .flashSale {
+    background: linear-gradient(to right, #4caf50, #388e3c);
+    color: white;
+    padding: 10px;
+    width: 300px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}

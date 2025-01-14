@@ -1,0 +1,26 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust layout on different screen sizes */
+    gap: 2rem; /* Increased spacing between cards */
+    padding: 2rem; /* Padding around the grid */
+    margin-top: 20px; /* Add margin to avoid overlap with the sticky navbar */
+}
+
+.loading {
+    color: #4caf50;
+    font-size: 32px;
+    font-weight: bold;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+    .loading {
+        color: #4caf50;
+        font-size: 32px;
+        font-weight: bold;
+        margin-left: 20%;
+    }
+}

@@ -1,0 +1,146 @@
+/* RecipeDetail.module.css */
+
+.pageContainer {
+    background-color: #f9f9fb;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .detailContent {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  
+  .loader {
+    color: #4caf50;
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 40%;
+}
+
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4caf50;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .imageWrapper {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .image {
+    width: 50%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin: auto;
+  }
+  
+  .summary {
+    font-size: 1.3rem;
+    color: #34495e;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4caf50;
+    border-bottom: 3px solid #4caf50;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+  }
+  
+  .ingredientList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .ingredientItem {
+    background: #f2f2f2;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+  
+  .instructions {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .details {
+    margin-top: 30px;
+    font-size: 30px;
+    color: #666;
+  }
+  
+  .details p {
+    margin-bottom: 15px;
+  }
+  
+  .likesContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .likeButton {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .likeButton:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+  }
+  
+  .likeButton:hover:not(:disabled) {
+    background: #c0392b;
+  }
+  
+  .heartIcon {
+    font-size: 1.2rem;
+    margin-right: 5px;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .summary {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.8;
+        margin-bottom: 30px;
+      }    
+      .title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .instructions {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.8;
+      }
+      .loader {
+        color: #4caf50;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 25%;
+    }
+  }
+  
